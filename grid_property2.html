@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid property2</title>
+
+    <style>
+            .grid_container{
+                display: grid;
+
+                grid-template-columns: auto auto auto;
+                grid-gap: 10px;
+                background-color: slategrey;
+                align-content: center;
+                
+                ;
+
+            }
+            .grid_container >div{
+                
+                border: 1px solid red;
+                grid-gap: 5px;
+                padding: 10px;
+               
+
+            }
+            .div1{
+                grid-column: 1 / span 5;
+
+                height: 100px;
+
+                background-color: green;
+            }
+            .div2{
+                grid-row: 2 / span 3;
+                height: 600px;
+                background-color: violet;
+            }
+            .div3{
+                grid-column: 2 / span 4;
+                background-color: aqua;
+                margin-top: 70px;
+
+                height: 100px;
+            }
+            .div4{
+                grid-column: 2 / span 4;
+                background-color: seagreen;
+                height: 100px;
+               
+            }
+            .div5{
+                grid-column: 2 / span 4;
+                background-color: chocolate;
+                height: 200px;
+               
+                width: 98%;
+               
+                margin-right: 8px;
+
+                display: grid;
+                grid-template-columns: auto auto auto;
+                
+            }
+
+            .div5 > div{
+                border: 2px solid white;
+                background-color: darkolivegreen;
+            }
+            
+           
+    </style>
+
+</head>
+
+<body>
+    <div class="grid_container">
+        <div class="div1"> </div>
+
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5">
+
+            <div class="ingrid1"></div>
+            <div class="ingrid2"></div>
+            <div class="ingrid3"></div>
+            
+            </div>
+
+    </div>
+
+</body>
+
+</html>

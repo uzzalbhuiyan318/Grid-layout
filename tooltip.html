@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        .youtube {
+            background-color: gray;
+            color: greenyellow;
+            text-decoration: none;
+            padding: auto;
+            position: relative;
+            margin: 5px;
+        }
+
+        span {
+            visibility: hidden;
+            position: absolute;
+            color: black;
+            margin: 10px;
+            margin-top: 30px;
+            margin-left: 5px;
+            padding: 5px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        .youtube:hover span {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#" class="youtube">youtube
+
+        <span>
+            youtube
+        </span>
+    </a>
+
+</body>
+
+</html>
